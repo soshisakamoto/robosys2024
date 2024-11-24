@@ -1,6 +1,6 @@
 # robosys2024
 
-robosys2024desu.
+ロボットシステム学のという講義で使用するrobosys2024というリポジトリです。
 
 [![test](https://github.com/soshisakamoto/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/soshisakamoto/robosys2024/actions/workflows/test.yml)
 
