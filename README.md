@@ -30,9 +30,7 @@ WSL2
 
 #サンプルコード
 #!/usr/bin/python3
-- # SPDX-FileCopyrightText: 2024 Soshi Sakamoto
-- # SPDX-License-Identifier: BSD-3-Clause
-- (-　の2行のような copyright and licenseを書く。)
+- copyright and licenseを書く。
 
 animals = [ "kangaroo", "penguin", "hippopotamus" ]
 print("1匹目: " + animals[0])
