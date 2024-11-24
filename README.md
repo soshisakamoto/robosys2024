@@ -16,8 +16,8 @@
 # 使い方
 
 #ダウンロード
-https://github.co.jp/
-WSL2
+- https://github.co.jp/
+- WSL2
 
 #起動する手順
 - リポジトリをクローンします。
@@ -29,22 +29,22 @@ WSL2
 - git push で手元のリポジトリをGithubへ反映します。
 
 #サンプルコード
-#!/usr/bin/python3
+- #!/usr/bin/python3
 - copyright and licenseを書く。
 
-animals = [ "kangaroo", "penguin", "hippopotamus" ]
-print("1匹目: " + animals[0])
-print("2匹目: " + animals[1])
-print("3匹目: " + animals[-1])
+- animals = [ "kangaroo", "penguin", "hippopotamus" ]
+- print("1匹目: " + animals[0])
+- print("2匹目: " + animals[1])
+- print("3匹目: " + animals[-1])
 
 #実行手順
-chmod +x animals.py で権限を与え、
+- chmod +x animals.py で権限を与え、
  ./animals.pyで実行します。
 
 #実行結果
-1匹目: kangaroo
-2匹目: penguin
-3匹目: hippopotamus
+- 1匹目: kangaroo
+- 2匹目: penguin
+- 3匹目: hippopotamus
 
 # 必要なソフトウェア
 - Python
