@@ -11,25 +11,48 @@
 # animals.pyコマンド
 [![test](https://github.com/soshisakamoto/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/soshisakamoto/robosys2024/actions/workflows/test.yml)
 
-このソフトは、
+このソフトは、Pythonを使ってリストに格納された動物名をインデックスを指定して取得し、それを順番に出力するスクリプトを作成、実行するものです。
 
+# 使い方
 
+#ダウンロード
+https://github.co.jp/
+WSL2
 
-# サンプルコード
+#起動する手順
+- リポジトリをクローンします。
+- ディレクトリに移動します。
+- 下に書いてあるサンプルコードを作成します。
+- 移動したディレクトリにanimals.pyがあることを確認します。
+- git add animals.pyと入力します。
+- git commit -m "何をしたかを書く" を入力します。 
+- git push で手元のリポジトリをGithubへ反映します。
+
+#サンプルコード
 #!/usr/bin/python3
-- copyright and licenseを書く。
+- # SPDX-FileCopyrightText: 2024 Soshi Sakamoto
+- # SPDX-License-Identifier: BSD-3-Clause
+- (-　の2行のような copyright and licenseを書く。)
 
 animals = [ "kangaroo", "penguin", "hippopotamus" ]
 print("1匹目: " + animals[0])
 print("2匹目: " + animals[1])
 print("3匹目: " + animals[-1])
 
+#実行手順
+chmod +x animals.py で権限を与え、
+ ./animals.pyで実行します。
+
+#実行結果
+1匹目: kangaroo
+2匹目: penguin
+3匹目: hippopotamus
 
 # 必要なソフトウェア
 - Python
  - テスト済みバージョン: 3.7∼3.11
 
-#参考文献
+# 参考文献
 - https://ryuichiueda.github.io/slides_marp/robosys2024/lesson2.html#1
 - https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fqiita.com%2FCanard_engineer_c_cpp%2Fitems%2F81ce4e53881138dbf37f
 
