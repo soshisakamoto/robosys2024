@@ -17,7 +17,7 @@
 
 # サンプルコード
 #!/usr/bin/python3
-copyright and licenseを書く。
+- copyright and licenseを書く。
 
 animals = [ "kangaroo", "penguin", "hippopotamus" ]
 print("1匹目: " + animals[0])
@@ -30,8 +30,8 @@ print("3匹目: " + animals[-1])
  - テスト済みバージョン: 3.7∼3.11
 
 #参考文献
-https://ryuichiueda.github.io/slides_marp/robosys2024/lesson2.html#1
-https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fqiita.com%2FCanard_engineer_c_cpp%2Fitems%2F81ce4e53881138dbf37f
+- https://ryuichiueda.github.io/slides_marp/robosys2024/lesson2.html#1
+- https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fqiita.com%2FCanard_engineer_c_cpp%2Fitems%2F81ce4e53881138dbf37f
 
 # テスト環境
 - Ubuntu-24.04 LTS
