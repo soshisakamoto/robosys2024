@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/bash 
 # SPDX-FileCopyrightText: 2024 Soshi Sakamoto
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -9,7 +9,7 @@ ng() {
 
 res=0
 
-### NORMAL INPUT ###
+# 普通の入力
 out=$(echo "robosys" | ./capitalize)
 [ "${out}" = "ROBOSYS" ] || ng "$LINENO"
 
@@ -22,11 +22,8 @@ out=$(echo "robosys2024" | ./capitalize)
 out=$(echo "/.あ" | ./capitalize)
 [ "${out}" = "/.あ" ] || ng "$LINENO"
 
-### STRANGE INPUT ###
-out=$(echo "/;]" | ./capitalize)
-[ "${out}" = "/" ] || ng "$LINENO"
-
-out=$(echo ";/]" | ./capitalize)
+# 空の入力
+out=$(echo "" | ./capitalize)
 [ "${out}" = "" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
