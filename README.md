@@ -2,59 +2,57 @@
 
 ロボットシステム学という講義で使用するrobosys2024というリポジトリです。
 
-- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
-- このパッケージは、3条項BSDライセンスのもとryuichiueda/emcl由来のコード( © 2022 Ryuichi Ueda) を利用しています。
-- このパッケージのコードは、下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda) のものを、本人の許可を得て自身の著作としたものです。
-    - [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
-- © 2022 Ryuichi Ueda
-
-# animals.pyコマンド
 [![test](https://github.com/soshisakamoto/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/soshisakamoto/robosys2024/actions/workflows/test.yml)
 
-このソフトは、Pythonを使ってリストに格納された動物名をインデックスを指定して取得し、それを順番に出力するスクリプトを作成、実行するものです。
+# capitalizeコマンド
+
+このコマンドは、標準入力からテキストを受け取り、そのテキストに含まれる小文字を大文字に変換し、標準出力に表示されます。
+※　小文字以外（平仮名、記号、大文字など）は、受け取ったテキストのままの状態で標準出力に表示されます。
 
 # 使い方
-
-#ダウンロード
-- https://github.co.jp/
-- WSL2
-
-#起動する手順
 - リポジトリをクローンします。
+```
+$ git clone https://github.com/soshisakamoto/robosys2024.git
+```
+
 - ディレクトリに移動します。
-- 下に書いてあるサンプルコードを作成します。
-- 移動したディレクトリにanimals.pyがあることを確認します。
-- git add animals.pyと入力します。
-- git commit -m "何をしたかを書く" を入力します。 
-- git push で手元のリポジトリをGithubへ反映します。
+```
+$ cd robosys2024
+```
 
-#サンプルコード
-- #!/usr/bin/python3
-- copyright and licenseを書く。
+- vi capitalize を作成します。
+- 移動したディレクトリに capitalize があることを確認します。
+- git add -A と入力します。
+- git commit -m "何をしたかを書く"  を入力します。 
+- git push で手元のリポジトリを Github へ反映します。
 
-- animals = [ "kangaroo", "penguin", "hippopotamus" ]
-- print("1匹目: " + animals[0])
-- print("2匹目: " + animals[1])
-- print("3匹目: " + animals[-1])
 
-#実行手順
-- chmod +x animals.py で権限を与え、
- ./animals.pyで実行します。
+# 実行手順
+- 権限を付与します。
+```
+$ chmod +x capitalize
+```
 
-#実行結果
-- 1匹目: kangaroo
-- 2匹目: penguin
-- 3匹目: hippopotamus
+- ""の間にテキストを入力して実行します。
+```
+$ echo "robosys2024" | ./capitalize
+```
+
+# 実行結果
+上のように""の間にrobosys2024と入力した場合、ROBOSYS2024と表示されます。
 
 # 必要なソフトウェア
 - Python
  - テスト済みバージョン: 3.7∼3.11
 
+# テスト環境
+- Ubuntu-20.04 LTS
+
 # 参考文献
-- https://ryuichiueda.github.io/slides_marp/robosys2024/lesson2.html#1
 - https://cit.manaba.jp/ct/link_iframe_balloon?url=https%3A%2F%2Fqiita.com%2FCanard_engineer_c_cpp%2Fitems%2F81ce4e53881138dbf37f
 
-# テスト環境
-- Ubuntu-24.04 LTS
-
+# ライセンスと著作権
+- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
+- このパッケージのコードは、下記のスライド(CC-BY-SA 4.0 by Ryuichi Ueda) のものを、本人の許可を得て自身の著作としたもの>です。
+    - [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022)
 - © 2024 Soshi Sakamoto
