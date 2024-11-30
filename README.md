@@ -20,15 +20,15 @@ $ git clone https://github.com/soshisakamoto/robosys2024.git
 $ cd robosys2024
 ```
 
-- vi capitalize を作成します。
+- vi capitalize を実行し、コードを記述して保存します。
 - 移動したディレクトリに capitalize があることを確認します。
-- git add -A と入力します。
+- git add -capitalize と入力します。
 - git commit -m "何をしたかを書く"  を入力します。 
 - git push で手元のリポジトリを Github へ反映します。
 
 
-# 実行手順
-- 権限を付与します。
+# 実行手順と結果
+- 以下を実行してスクリプトに権限を付与します。
 ```
 $ chmod +x capitalize
 ```
@@ -37,9 +37,10 @@ $ chmod +x capitalize
 ```
 $ echo "robosys2024" | ./capitalize
 ```
-
-# 実行結果
-上のように""の間にrobosys2024と入力した場合、ROBOSYS2024と表示されます。
+- 上のように""の間にrobosys2024と入力した場合、以下のように表示されます。
+```
+ROBOSYS2024
+```
 
 # 必要なソフトウェア
 - Python
