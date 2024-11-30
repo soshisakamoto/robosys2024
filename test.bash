@@ -10,16 +10,23 @@ ng() {
 res=0
 
 ### NORMAL INPUT ###
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
+out=$(echo "robosys" | ./capitalize)
+[ "${out}" = "ROBOSYS" ] || ng "$LINENO"
+
+out=$(echo "Robosys" | ./capitalize)
+[ "${out}" = "ROBOSYS" ] || ng "$LINENO"
+
+out=$(echo "robosys2024" | ./capitalize)
+[ "${out}" = "ROBOSYS2024" ] || ng "$LINENO"
+
+out=$(echo "/.あ" | ./capitalize)
+[ "${out}" = "/.あ" ] || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(echo あ| ./plus)
-[ "$?" = 1 ]      || ng "$LINENO"
-[ "${out}" = "" ] || ng "$LINENO"
+out=$(echo "/;]" | ./capitalize)
+[ "${out}" = "/" ] || ng "$LINENO"
 
-out=$(echo | ./plus)
-[ "$?" = 1 ]      || ng "$LINENO"
+out=$(echo ";/]" | ./capitalize)
 [ "${out}" = "" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
